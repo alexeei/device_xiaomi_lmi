@@ -231,6 +231,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
           lightUp();
           playSoundEffect(Constants.CLOSE_CAMERA_STATE);
           mMotor.takebackMotor(1);
+          Thread.sleep(1200);
           mSensorManager.unregisterListener(mFreeFallListener, mFreeFallSensor);
         } else {
           mMotorBusy = false;
@@ -242,7 +243,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
           }
           return;
         }
-      } catch (RemoteException e) {
+      } catch (InterruptedException | RemoteException e) {
         // Do nothing
       }
       mHandler.postDelayed(() -> mMotorBusy = false, 1200);
