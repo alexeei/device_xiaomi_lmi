@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 # Inherit some common ssos stuff.
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
+#faceunlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
