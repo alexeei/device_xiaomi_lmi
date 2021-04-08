@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 # Inherit some common ssos stuff.
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+
 PRODUCT_NAME := ssos_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
