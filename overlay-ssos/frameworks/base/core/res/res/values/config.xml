@@ -24,4 +24,8 @@
 <!-- Enable face auth only when swiping security view -->
 <bool name="config_faceAuthOnSecurityView">true</bool>
 
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">5</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">5</integer>
+    
 </resources>
