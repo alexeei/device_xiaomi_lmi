@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
+# Ancient Identifier.
+ANCIENT_GAPPS := true
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
