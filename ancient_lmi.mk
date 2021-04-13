@@ -14,6 +14,7 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 # Ancient Identifier.
 ANCIENT_GAPPS := true
 
+EXTRA_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 
 # Inherit some common Lineage stuff.
