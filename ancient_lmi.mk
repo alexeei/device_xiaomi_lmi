@@ -17,6 +17,8 @@ ANCIENT_GAPPS := true
 EXTRA_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 
+ANCIENT_OFFICIAL := true
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
