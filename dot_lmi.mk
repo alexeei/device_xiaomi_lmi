@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
 # Inherit some common dot stuff.
-$(call inherit-product, vendor/dot/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 PRODUCT_NAME := dot_lmi
 PRODUCT_DEVICE := lmi
