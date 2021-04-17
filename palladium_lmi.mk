@@ -17,6 +17,7 @@ $(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 #GAPPS
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_NAME := palladium_lmi
 PRODUCT_DEVICE := lmi
