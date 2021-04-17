@@ -357,4 +357,6 @@
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">200</integer>
+            <!-- Shows the required view for in-display fingerprint -->
+<bool name="config_supportsInDisplayFingerprint">true</bool> 
 </resources>
