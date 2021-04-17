@@ -19,6 +19,15 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
+#PALLADIUM-PROPS
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.palladiumdevice.maintainer=Soumyo \
+    ro.palladiumdevice.cpu=Snapdragon 865 \
+    ro.palladiumdevice.display=6.67inch \
+    ro.palladiumdevice.displaytype=Super Amoled HDR10+ \
+    ro.palladiumdevice.battery=4700mAh \
+    ro.palladiumdevice.camera=64MP+13MP+5MP+2MP
+
 PRODUCT_NAME := palladium_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
