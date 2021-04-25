@@ -35,9 +35,6 @@ TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CONFIG := vendor/lmi-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 
-# Properties
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-
 # Inherit from xiaomi sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
