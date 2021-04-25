@@ -39,9 +39,6 @@ TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 # DTBO
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
-# Properties
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-
 # Inherit from xiaomi sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
