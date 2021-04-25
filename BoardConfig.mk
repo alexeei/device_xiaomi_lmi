@@ -5,7 +5,7 @@
 #
 
 # Inherit from xiaomi sm8250-common
--include device/xiaomi/sm8250-common/BoardConfigCommon.mk
+include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/lmi
 
