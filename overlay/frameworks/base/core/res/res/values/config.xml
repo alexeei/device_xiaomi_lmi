@@ -182,7 +182,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+    <integer name="config_screenBrightnessSettingMinimum">5</integer>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
          This resource is similar to config_maximumScreenDimDuration but the maximum
