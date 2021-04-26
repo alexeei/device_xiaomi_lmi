@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The ancientOS Project
+# Copyright (C) 2021 The hentaiOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_lmi.mk
+    $(LOCAL_DIR)/hentai_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_lmi-user \
-    ancient_lmi-userdebug \
-    ancient_lmi-eng
+    hentai_lmi-user \
+    hentai_lmi-userdebug \
+    hentai_lmi-eng
