@@ -1,0 +1,37 @@
+on early-init
+    write /sys/fs/selinux/enforce 0
+    
+on boot
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps
+    
+    # Allow system to modify exposure adjustment state
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
+
+on post-fs-data
+    mount none dev/null /vendor/lib/soundfx/libvolumelistener.so bind
+    mount none dev/null /vendor/lib64/soundfx/libvolumelistener.so bind
+    
+service citsensor-hal-1-1  /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+    override
+    class late_start
+    user system
+    group system input wakelock
+
+on property:init.svc.cnss_diag=running
+    stop cnss_diag
+
+on property:init.svc.tcpdump=running
+    stop tcpdump
+
+on property:init.svc.vendor.ipacm-diag=running
+    stop vendor.ipacm-diag
+    
+on property:sys.boot_completed=1
+   write /sys/fs/selinux/enforce 1
