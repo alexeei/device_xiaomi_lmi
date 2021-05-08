@@ -21,9 +21,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 ANCIENT_OFFICIAL := true
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := ancient_lmi
+PRODUCT_NAME := lineage_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
