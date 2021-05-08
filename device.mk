@@ -7,7 +7,11 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
+<<<<<<< HEAD
     $(LOCAL_PATH)/overlay-ancient \
+=======
+    $(LOCAL_PATH)/overlay-lineage
+>>>>>>> parent of b29da19... Lmi: Add overlay-ancient
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
